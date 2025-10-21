@@ -1,0 +1,53 @@
+body{
+     background-image: linear-gradient(to right,rgb(107, 105, 105),rgb(171, 166, 166));
+     background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+     font-family: "Bitcount Grid Single", system-ui;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+    
+}
+.box{
+    background-image: white,wheat;
+    width: 500px;
+    height: 250px;
+    border:  5px  solid rgb(38, 6, 75);
+    text-align:center;
+    padding: 15px 0px 0px 0px;
+     box-shadow: 12px 12px 15px rgb(1, 10, 1),11px 11px 13px wheat;
+}
+input{
+    height: 25px;
+    width: 70px;
+    background-color: blanchedalmond;
+}
+#forfn{
+    width: 330px;
+    height: 30px;
+    margin-top: 40px;
+}
+input :hover{
+    border: 3px solid;
+     box-shadow: 2px 12px 5px rgb(1, 10, 1),1px 1px 13px wheat;
+}
+label{
+    color:black;
+    font-size: 20px;
+    font-family: "Solway", serif;
+}
+button:hover{
+    box-shadow: 2px 2px 5px rgb(1, 10, 1),1px 1px 3px wheat;
+}
+span{
+    font-size: 40px;
+    text-shadow: 1px 1px wheat;
+      font-family: "Edu NSW ACT Cursive", cursive;
+  
+}
