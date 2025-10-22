@@ -1,4 +1,4 @@
-    
+/* General styling */
 body {
   font-family: "Solway", serif;
   text-align: center;
@@ -12,8 +12,8 @@ body {
   align-items: center;
 }
 
-#heading {
-  font-family: "MedievalSharp", cursive;
+h1 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #333;
@@ -29,10 +29,10 @@ body {
   background: white;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2),2px 2px 12px wheat;
 }
 
-.box {
+.box{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -50,8 +50,7 @@ input {
   margin-top: 5px;
   font-size: 1rem;
   border-radius: 8px;
-  border: 1px solid lab(82.05% 0 -0.01);
-    font-family: "Bebas Neue", sans-serif;
+  border: 1px solid #ccc;
 }
 
 button {
@@ -59,7 +58,7 @@ button {
   margin-top: 15px;
   border: none;
   border-radius: 8px;
-  background-color: hsl(0, 100%, 71%);
+  background-color: #ff6b6b;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -71,13 +70,14 @@ button:hover {
 }
 
 #result {
-  margin-top: 10px;
-  color: lch(21.25% 0 296.81);
-  font-size: 120px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  font-size: 30px;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and(max-width: 600px) {
   h1 {
     font-size: 1.8rem;
   }
