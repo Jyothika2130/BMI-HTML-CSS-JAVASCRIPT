@@ -1,53 +1,97 @@
-body{
-     background-image: linear-gradient(to right,rgb(107, 105, 105),rgb(171, 166, 166));
-     background-repeat: no-repeat;
-}
-h1{
-    text-align: center;
-     font-family: "Bitcount Grid Single", system-ui;
     
+body {
+  font-family: "Solway", serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffb3b3, #ffe0b3);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   height: 100vh;
-    
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px #999;
 }
-.box{
-    background-image: white,wheat;
-    width: 500px;
-    height: 250px;
-    border:  5px  solid rgb(38, 6, 75);
-    text-align:center;
-    padding: 15px 0px 0px 0px;
-     box-shadow: 12px 12px 15px rgb(1, 10, 1),11px 11px 13px wheat;
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-input{
-    height: 25px;
-    width: 70px;
-    background-color: blanchedalmond;
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-#forfn{
-    width: 330px;
-    height: 30px;
-    margin-top: 40px;
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
 }
-input :hover{
-    border: 3px solid;
-     box-shadow: 2px 12px 5px rgb(1, 10, 1),1px 1px 13px wheat;
+
+input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid lab(82.05% 0 -0.01);
 }
-label{
-    color:black;
-    font-size: 20px;
-    font-family: "Solway", serif;
+
+button {
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(0, 100%, 71%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
-button:hover{
-    box-shadow: 2px 2px 5px rgb(1, 10, 1),1px 1px 3px wheat;
+
+button:hover {
+  background-color: #ff4c4c;
 }
-span{
-    font-size: 40px;
-    text-shadow: 1px 1px wheat;
-     
-  
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .main {
+    width: 95%;
+    padding: 15px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
 }
