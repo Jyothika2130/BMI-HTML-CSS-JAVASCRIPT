@@ -12,8 +12,8 @@ body {
   align-items: center;
 }
 
-h1 {
-  font-family: "Bebas Neue", sans-serif;
+#heading {
+  font-family: "MedievalSharp", cursive;
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #333;
@@ -51,6 +51,7 @@ input {
   font-size: 1rem;
   border-radius: 8px;
   border: 1px solid lab(82.05% 0 -0.01);
+    font-family: "Bebas Neue", sans-serif;
 }
 
 button {
@@ -70,13 +71,13 @@ button:hover {
 }
 
 #result {
-  margin-top: 20px;
-  font-weight: bold;
-  color: #333;
+  margin-top: 10px;
+  color: lch(21.25% 0 296.81);
+  font-size: 120px;
 }
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   h1 {
     font-size: 1.8rem;
   }

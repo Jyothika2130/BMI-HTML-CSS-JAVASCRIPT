@@ -8,12 +8,12 @@ const ageFun = () => {
         return;
       }
       if (height.value <= 0 || weight.value <= 0) {
-        result.innerHTML = "Enter valid data";
+        result.innerHTML = "Enter valid data to calculate";
         return;
       }
       const heightInMeters = height.value / 100;
       const bmi = Math.floor(weight.value / (heightInMeters * heightInMeters));
-      let category = "";
+      let category = ""; 
       if (bmi < 18.5) {
         category = "Underweight";
         
@@ -27,7 +27,7 @@ const ageFun = () => {
       result.innerHTML = "your bmi is: " + bmi + " you are in: " + category;
     }
   } catch (error) {
-    result.innerHTML= "Enter valid data";
+    result.innerHTML= "Enter valid data to calculate";
   }
 };
 const resetFun = () => {
