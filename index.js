@@ -17,11 +17,11 @@ const ageFun = () => {
       const bmi = Math.floor(weight.value / (heightInMeters * heightInMeters));
 
       let category = "";
-      if (bmi < 18.5) {
+      if (bmi < 18.5 ) {
         category = "Underweight";
-      } else if (bmi < 24.9) {
+      } else if (bmi >=18.5 && bmi <= 25) {
         category = "Normal weight";
-      } else if (bmi < 29.9) {
+      } else if (bmi >=25 && bmi <= 30) {
         category = "Overweight";
       } else {
         category = "Obese";
